@@ -20,5 +20,8 @@ app.get('/', function (req, res) {
 var template = require('./template.js');
 app.get('/template', template.get);
 
-var upload = require('./upload.js');
+var upload = require('./upload2.js');
 app.post('/', upload.post);
+
+var getJson = require('./getjson');
+app.get('/deudores', getJson.get);
